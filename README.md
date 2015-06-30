@@ -4,7 +4,7 @@ Inspired by https://facebook.com/celebratepride - a simple Bash script (30 lines
 
 ### Example
 
-![Input](example.jpg?raw=true "Input") => ![Output](example.jpg-prideified?raw=true "Output")
+![Input](example.jpg?raw=true "Input") => ![Output](example-prideified.jpg?raw=true "Output")
 
 ### Dependencies
 
@@ -12,9 +12,9 @@ Only ImageMagick.
 
 ### Usage
 
-`./prideify.sh <input image file>`
+`./prideify.sh [-r|-b|-p|-t] <input image file>`
 
-Output will be at `<input image file>-pridified`.
+Output will be at `<input image file>-prideified<.extension>`. The optional -r, -b, -p, or -t flags switch between rainbow, bisexual, pansexual, and transgender pride flags, with -r as the default.'
 
 ### References
 
