@@ -16,7 +16,8 @@ colors='255,62,24 252,154,0 255,216,0 57,234,124 11,178,255 152,90,255'
 
 cp $image $tmp
 
-let "recth=$height/6"
+# rect height = ceil(height/# of rows), to avoid an empty line across the bottom for non-divisible image heights.
+let "recth=($height - 1)/6 + 1"
 
 y1=0
 
