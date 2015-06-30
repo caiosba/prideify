@@ -11,7 +11,7 @@ fi
 
 width=$(identify $image | sed 's/.* \([0-9][0-9]*\)x\([0-9][0-9]*\) .*/\1/')
 height=$(identify $image | sed 's/.* \([0-9][0-9]*\)x\([0-9][0-9]*\) .*/\2/')
-tmp=$(mktemp)
+tmp=$(mktemp 2>/dev/null || mktemp -t 'tmp')
 colors='255,62,24 252,154,0 255,216,0 57,234,124 11,178,255 152,90,255'
 
 cp $image $tmp
