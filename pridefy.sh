@@ -50,4 +50,9 @@ do
   let "y1=y2+1" # Stripes are non-overlapping.
 done
 
-mv $tmp "$image-prideified"
+if [[ `basename "$image"` =~ '.' ]]
+then
+    mv $tmp "${image%.*}"-prideified."${image##*.}"
+else
+    mv $tmp "$image-prideified"
+fi
