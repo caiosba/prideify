@@ -12,9 +12,9 @@ Only ImageMagick.
 
 ### Usage
 
-`./prideify.sh <input image file>`
+`./prideify.sh [-r|-b|-p|-t] <input image file>`
 
-Output will be at `<input image file>-pridified`.
+Output will be at `<input image file>-pridified`. The optional -r, -b, -p, or -t flags switch between rainbow, bisexual, pansexual, and transgender pride flags, with -r as the default.'
 
 ### References
 
